@@ -7,11 +7,14 @@
 
 ### GRPC POC Elixir Client
 
-[grpc-poc-elixir-client](https://github.com/guisehn/grpc-poc-elixir-client)
+You can use the Elixir client:
 
+[grpc-poc-elixir-client](https://github.com/guisehn/grpc-poc-elixir-client)
 ### grpcurl
 
-Run this command from inside [grpc-poc-protofiles](https://github.com/guisehn/grpc-poc-protofiles):
+Or, you can also use the CLI tool `grpcurl` to test it.
+
+After starting the server, run this command from inside [grpc-poc-protofiles](https://github.com/guisehn/grpc-poc-protofiles):
 
 `grpcurl -plaintext -proto protofiles/hello_service.proto -d '{"name":"gui"}' localhost:50051 grpc_poc.HelloService.Hello`
 
